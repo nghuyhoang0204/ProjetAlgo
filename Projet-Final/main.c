@@ -31,6 +31,7 @@ int main(){
 
     tri(uni);
     print_uni(uni);
+    print_occu(motif1);
 
 
 }
