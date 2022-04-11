@@ -3,6 +3,9 @@
 #include <string.h>
 #include <time.h>
 
+#ifndef _Mon_Fichier_H
+#define _Mon_Fichier_H
+
 #define LENGTH 200
 struct occu
 {
@@ -27,6 +30,8 @@ void print_occu(struct occus *);
 void print_uni(struct occus *);
 void tri(struct occus *);
 void union_s (struct occus *,struct occus *,struct occus *);
+
+#endif
 
 
 
