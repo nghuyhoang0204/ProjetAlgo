@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "Fichier.h"
 
-//Etape 1
+//Etape 1 : Remplir le alphabet dans une talbe
 void rempl(char array[]){
     char alphabet [4] = "NGHU";
     for(int i=0;i<LENGTH-1;i++){
@@ -12,6 +12,7 @@ void rempl(char array[]){
     
 }
 
+// Print the union du struct
 void print_uni(struct occus *uni)
 {
     printf("for the union \n");
@@ -24,7 +25,7 @@ void print_uni(struct occus *uni)
     printf("\n");
 }
 
-
+// Print the motif du struct
 void print_occu(struct occus *occus)
 {
     int all = 0;
@@ -51,6 +52,7 @@ void print_occu(struct occus *occus)
     occus->nombre_occu_total = all;
 }
 
+// Faire l'union entre les motifs 1 et 2 s'ils sont identiques
 void union_s (struct occus *motif1,struct occus *motif2,struct occus *uni)
 {
     int k = 0;
@@ -69,6 +71,7 @@ void union_s (struct occus *motif1,struct occus *motif2,struct occus *uni)
     }
 }
 
+// Trier le struct 
 void tri(struct occus *occus)
 {
 	struct occu tmp;
